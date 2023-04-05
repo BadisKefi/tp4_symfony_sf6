@@ -7,3 +7,6 @@
 homepage:
     path: /
     controller: App\Controller\IndexController::home
+article_save:
+    path: /article/save
+    controller: App\Controller\IndexController::save
