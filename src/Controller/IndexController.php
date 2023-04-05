@@ -5,10 +5,9 @@ use Symfony\Component\HttpFoundation\Response;
 Use Symfony\Component\Routing\Annotation\Route;
 class IndexController extends AbstractController
 {
- #[Route('/')]
- public function home()
+ #[Route('/{name}')]
+ public function home($name)
  {
- return new Response('<h1>Ma première page Symfony</h1>');
-
+ return $this->render('templates/index.html.twig',['name' => $name]);
  }
 }
