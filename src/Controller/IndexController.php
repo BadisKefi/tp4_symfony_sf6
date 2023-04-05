@@ -8,6 +8,6 @@ class IndexController extends AbstractController
  #[Route('/{name}')]
  public function home($name)
  {
- return $this->render('templates/index.html.twig',['name' => $name]);
+    return $this->render('index.html.twig',['name' => $name]); 
  }
 }

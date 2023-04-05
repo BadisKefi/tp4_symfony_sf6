@@ -4,6 +4,6 @@
 #        namespace: App\Controller
 #    type: attribute
 
-#homepage:
-#    path: /
-#    controller: App\Controller\IndexController::home
+homepage:
+    path: /
+    controller: App\Controller\IndexController::home
