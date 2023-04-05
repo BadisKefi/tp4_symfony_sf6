@@ -13,11 +13,14 @@
  <tbody>
  {% for article in articles %}
  <tr>
- <td>{{ article.nom }}</td>
- <td>{{ article.prix }}</td>
- <td>
- <a href="/article/{{ article.id }}" class="btn btn-dark">Détails</a>
- </td>
+ <td>{{ article.getName() }}</td>
+ <td>{{ article.getPrix() }}</td>
+<td>
+<a href="/article/{{ article.getId() }}" class="btn btn-dark">Détails</a>
+<a href="/article/edit/{{ article.getId() }}" class="btn btn-dark">Modifier</a>
+<a href="/article/delete/{{ article.getId() }}" class="btn btn-danger"
+onclick="return confirm('Etesvous sûr de supprimer cet article?');">Supprimer</a>
+</td>
  </tr>
  {% endfor %}
  </tbody>
